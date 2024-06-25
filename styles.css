@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9e87cb; /* Light background color for the "wall" */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fbf8e0; /* Sticky note background color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the sticky note */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth effect */
+    width: 600px;
+    max-width: 90%;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 24px; /* Larger font size for the title */
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Slightly rounded corners for the input */
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #d4af37; /* Highlight color when focused */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #d4af37; /* Button color */
+    color: white;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #c29f3b; /* Button hover color */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    background-color: #fff; /* Sticky note body color */
+    border-radius: 10px; /* Rounded corners for the note body */
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for note body */
+}
+
+li {
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li:hover {
+    background: #f9f9f9; /* Hover color for list items */
+}
+
+li button {
+    background: #dc3545; /* Delete button color */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background: #c82333; /* Delete button hover color */
+}
+
+.fa-plus {
+    font-size: 14px;
+}
